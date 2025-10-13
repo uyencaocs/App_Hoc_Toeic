@@ -1,0 +1,25 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.dbmdl
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Others
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.tmp
+*.bak
