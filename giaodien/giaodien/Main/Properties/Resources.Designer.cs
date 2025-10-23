@@ -8,11 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-<<<<<<<< HEAD:Properties/Resources.Designer.cs
-namespace TestDauVao.Properties
-========
 namespace Main.Properties
->>>>>>>> origin/trungdev:giaodien/Main/Properties/Resources.Designer.cs
 {
 
 
@@ -48,11 +44,7 @@ namespace Main.Properties
             {
                 if ((resourceMan == null))
                 {
-<<<<<<<< HEAD:Properties/Resources.Designer.cs
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TestDauVao.Properties.Resources", typeof(Resources).Assembly);
-========
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Main.Properties.Resources", typeof(Resources).Assembly);
->>>>>>>> origin/trungdev:giaodien/Main/Properties/Resources.Designer.cs
                     resourceMan = temp;
                 }
                 return resourceMan;
