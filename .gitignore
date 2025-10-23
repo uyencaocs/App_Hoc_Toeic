@@ -7,6 +7,3 @@
 
 # NuGet packages
 [Pp]ackages/
-
-# Lock file (thường không cần thiết)
-packages.config
