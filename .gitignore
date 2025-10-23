@@ -1,0 +1,9 @@
+# Visual Studio / IDE
+.vs/
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages
+[Pp]ackages/
