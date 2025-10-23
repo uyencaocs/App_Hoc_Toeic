@@ -1,4 +1,4 @@
-namespace TestDauVao.Databaitestdauvao
+namespace TestDauVao.Toeic_database
 {
     using System;
     using System.Collections.Generic;
@@ -9,12 +9,6 @@ namespace TestDauVao.Databaitestdauvao
     [Table("Grammar")]
     public partial class Grammar
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Grammar()
-        {
-            PlacementTests = new HashSet<PlacementTest>();
-        }
-
         [Key]
         public int IDGrammar { get; set; }
 
@@ -26,15 +20,12 @@ namespace TestDauVao.Databaitestdauvao
 
         public string Exercise { get; set; }
 
-        public int? IDLevel { get; set; }
+        public int IDLevel { get; set; }
 
-        public int? IDTopic { get; set; }
+        public int IDTopic { get; set; }
 
         public virtual Level Level { get; set; }
 
         public virtual Topic Topic { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PlacementTest> PlacementTests { get; set; }
     }
 }

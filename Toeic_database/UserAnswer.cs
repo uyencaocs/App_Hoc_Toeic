@@ -1,4 +1,4 @@
-namespace TestDauVao.Databaitestdauvao
+namespace TestDauVao.Toeic_database
 {
     using System;
     using System.Collections.Generic;
@@ -12,17 +12,17 @@ namespace TestDauVao.Databaitestdauvao
         [Key]
         public int IDUserAnswer { get; set; }
 
-        public int? IDResult { get; set; }
-
-        public int? IDQuestion { get; set; }
-
         [StringLength(1)]
-        public string UserChoice { get; set; }
+        public string ChosenAnswer { get; set; }
 
         public bool? IsCorrect { get; set; }
 
-        public virtual PlacementQuestion PlacementQuestion { get; set; }
+        public int IDTestAttempt { get; set; }
 
-        public virtual PlacementTestResult PlacementTestResult { get; set; }
+        public int IDQuestion { get; set; }
+
+        public virtual Question Question { get; set; }
+
+        public virtual TestAttempt TestAttempt { get; set; }
     }
 }

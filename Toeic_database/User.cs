@@ -1,4 +1,4 @@
-namespace TestDauVao.Databaitestdauvao
+namespace TestDauVao.Toeic_database
 {
     using System;
     using System.Collections.Generic;
@@ -13,8 +13,7 @@ namespace TestDauVao.Databaitestdauvao
         public User()
         {
             Passwords = new HashSet<Password>();
-            PlacementTests = new HashSet<PlacementTest>();
-            PlacementTestResults = new HashSet<PlacementTestResult>();
+            TestAttempts = new HashSet<TestAttempt>();
         }
 
         [Key]
@@ -31,7 +30,7 @@ namespace TestDauVao.Databaitestdauvao
 
         [Required]
         [StringLength(100)]
-        public string PassWord { get; set; }
+        public string Password { get; set; }
 
         [StringLength(100)]
         public string Email { get; set; }
@@ -47,9 +46,6 @@ namespace TestDauVao.Databaitestdauvao
         public virtual ICollection<Password> Passwords { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PlacementTest> PlacementTests { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PlacementTestResult> PlacementTestResults { get; set; }
+        public virtual ICollection<TestAttempt> TestAttempts { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-namespace TestDauVao.Databaitestdauvao
+namespace TestDauVao.Toeic_database
 {
     using System;
     using System.Collections.Generic;
@@ -14,10 +14,10 @@ namespace TestDauVao.Databaitestdauvao
 
         public int? IDUser { get; set; }
 
-        [Column("PassWord")]
+        [Column("Password")]
         [Required]
         [StringLength(100)]
-        public string PassWord1 { get; set; }
+        public string Password1 { get; set; }
 
         public virtual User User { get; set; }
     }

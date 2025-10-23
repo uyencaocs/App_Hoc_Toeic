@@ -1,4 +1,4 @@
-namespace TestDauVao.Databaitestdauvao
+namespace TestDauVao.Toeic_database
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,8 @@ namespace TestDauVao.Databaitestdauvao
         public Level()
         {
             Grammars = new HashSet<Grammar>();
-            PlacementTestResults = new HashSet<PlacementTestResult>();
+            Tests = new HashSet<Test>();
+            TestAttempts = new HashSet<TestAttempt>();
             Users = new HashSet<User>();
             Vocabularies = new HashSet<Vocabulary>();
         }
@@ -29,7 +30,10 @@ namespace TestDauVao.Databaitestdauvao
         public virtual ICollection<Grammar> Grammars { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PlacementTestResult> PlacementTestResults { get; set; }
+        public virtual ICollection<Test> Tests { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TestAttempt> TestAttempts { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> Users { get; set; }

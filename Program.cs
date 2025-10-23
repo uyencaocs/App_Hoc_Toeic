@@ -16,7 +16,7 @@ namespace TestDauVao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NguoiDungchonThamGiaHoacKhongThamGiabaitestdauvao());
+            Application.Run(new Test_Form());
         }
     }
 }
