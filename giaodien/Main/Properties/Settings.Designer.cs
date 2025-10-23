@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vocabulary.Properties
+namespace Main.Properties
 {
 
 

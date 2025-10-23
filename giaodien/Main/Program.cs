@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vocabulary
+namespace Main
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Vocabulary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frmvoca());
+            Application.Run(new frmMain());
         }
     }
 }
