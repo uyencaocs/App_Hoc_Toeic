@@ -1,0 +1,497 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Downloads\\giaodien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\result_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\result_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\result_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\result_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\bai_kiem_tra_trinh_do.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\bai_kiem_tra_trinh_do.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\bai_kiem_tra_trinh_do.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\bai_kiem_tra_trinh_do.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\result_test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\result_test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|c:\\users\\asus\\downloads\\giaodien\\main\\form\\bai_kiem_tra_trinh_do.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\bai_kiem_tra_trinh_do.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|c:\\users\\asus\\downloads\\giaodien\\main\\logic\\placementtestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\logic\\placementtestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|c:\\users\\asus\\downloads\\giaodien\\main\\form\\test_form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\test_form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\test_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\test_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmvoca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmvoca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmvoca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmvoca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\test_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\test_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|c:\\users\\asus\\downloads\\giaodien\\main\\form\\frmsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmforgotpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmforgotpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\lichsunguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\lichsunguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\lichsunguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\lichsunguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmvoca.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmvoca.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmforgotpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmforgotpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|C:\\Users\\Asus\\Downloads\\giaodien\\main\\form\\frmregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F74B679-96E9-4A24-BECD-C6B2B19C240C}|Main\\Main.csproj|solutionrelative:main\\form\\frmregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Result_Test.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Result_Test.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Result_Test.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Result_Test.cs",
+              "RelativeToolTip": "Main\\Form\\Result_Test.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAkwAsBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:15:10.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bai_Kiem_Tra_Trinh_Do.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:11:04.677Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bai_Kiem_Tra_Trinh_Do.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs",
+              "RelativeToolTip": "Main\\Form\\Bai_Kiem_Tra_Trinh_Do.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:21:36.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Result_Test.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Result_Test.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Result_Test.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Result_Test.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\Result_Test.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:10:52.436Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bai_Kiem_Tra_Trinh_Do.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Bai_Kiem_Tra_Trinh_Do.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Bai_Kiem_Tra_Trinh_Do.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Bai_Kiem_Tra_Trinh_Do.Designer.cs",
+              "RelativeToolTip": "Main\\Form\\Bai_Kiem_Tra_Trinh_Do.Designer.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwC8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:00:07.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Result_Test.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Result_Test.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Result_Test.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Result_Test.Designer.cs",
+              "RelativeToolTip": "Main\\Form\\Result_Test.Designer.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAcwEEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:20:18.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlacementTestService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Logic\\PlacementTestService.cs",
+              "RelativeDocumentMoniker": "Main\\Logic\\PlacementTestService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Logic\\PlacementTestService.cs",
+              "RelativeToolTip": "Main\\Logic\\PlacementTestService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:09:05.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Test_Form.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Test_Form.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Test_Form.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Test_Form.Designer.cs",
+              "RelativeToolTip": "Main\\Form\\Test_Form.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwEoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:00:18.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Test_Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Test_Form.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Test_Form.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Test_Form.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\Test_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:10:59.925Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmMain.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmMain.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:10:38.581Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmMain.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmMain.cs",
+              "RelativeToolTip": "Main\\Form\\frmMain.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:45:31.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmChange.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmChange.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmChange.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmChange.cs",
+              "RelativeToolTip": "Main\\Form\\frmChange.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:36:29.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Frmvoca.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Frmvoca.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Frmvoca.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Frmvoca.cs",
+              "RelativeToolTip": "Main\\Form\\Frmvoca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:39:41.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Frmvoca.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Frmvoca.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Frmvoca.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Frmvoca.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\Frmvoca.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:10:48.06Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmGrammar.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\FrmGrammar.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\FrmGrammar.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\FrmGrammar.cs",
+              "RelativeToolTip": "Main\\Form\\FrmGrammar.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowBQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T03:08:02.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Test_Form.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Test_Form.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Test_Form.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Test_Form.cs",
+              "RelativeToolTip": "Main\\Form\\Test_Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T03:23:54.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Lichsunguoidung.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Lichsunguoidung.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Lichsunguoidung.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Lichsunguoidung.cs",
+              "RelativeToolTip": "Main\\Form\\Lichsunguoidung.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T03:48:39.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frmSetting.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmSetting.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmSetting.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmSetting.cs",
+              "RelativeToolTip": "Main\\Form\\frmSetting.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T16:55:05.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frmSetting.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmSetting.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmSetting.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmSetting.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\frmSetting.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T16:42:31.797Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Form1.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Form1.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Form1.cs",
+              "RelativeToolTip": "Main\\Form\\Form1.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAewFsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:43:01.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Frmvoca.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Frmvoca.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Frmvoca.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Frmvoca.Designer.cs",
+              "RelativeToolTip": "Main\\Form\\Frmvoca.Designer.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAqwGgAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:39:59.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmRegister.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmRegister.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmRegister.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmRegister.Designer.cs",
+              "RelativeToolTip": "Main\\Form\\frmRegister.Designer.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAqwK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:34:12.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmRegister.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmRegister.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmRegister.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmRegister.cs",
+              "RelativeToolTip": "Main\\Form\\frmRegister.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAlwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:33:49.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frmForgotPass.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmForgotPass.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmForgotPass.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmForgotPass.cs",
+              "RelativeToolTip": "Main\\Form\\frmForgotPass.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAD4v3QAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:22:04.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FrmGrammar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\FrmGrammar.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\FrmGrammar.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\FrmGrammar.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\FrmGrammar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:11:23.308Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frmForgotPass.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmForgotPass.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmForgotPass.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmForgotPass.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\frmForgotPass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:11:07.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Lichsunguoidung.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Lichsunguoidung.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Lichsunguoidung.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Lichsunguoidung.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\Lichsunguoidung.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:10:50.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frmRegister.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmRegister.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\frmRegister.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\frmRegister.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\frmRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:10:45.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Form1.cs",
+              "RelativeDocumentMoniker": "Main\\Form\\Form1.cs",
+              "ToolTip": "C:\\Users\\Asus\\Downloads\\giaodien\\Main\\Form\\Form1.cs [Design]",
+              "RelativeToolTip": "Main\\Form\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T14:07:06.463Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

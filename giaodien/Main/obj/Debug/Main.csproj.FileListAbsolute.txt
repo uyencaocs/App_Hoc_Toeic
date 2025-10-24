@@ -1,0 +1,87 @@
+D:\App\apptienganh\giaodien\Main\bin\Debug\Main.exe.config
+D:\App\apptienganh\giaodien\Main\bin\Debug\Main.exe
+D:\App\apptienganh\giaodien\Main\bin\Debug\Main.pdb
+D:\App\apptienganh\giaodien\Main\bin\Debug\EntityFramework.dll
+D:\App\apptienganh\giaodien\Main\bin\Debug\EntityFramework.SqlServer.dll
+D:\App\apptienganh\giaodien\Main\bin\Debug\EntityFramework.xml
+D:\App\apptienganh\giaodien\Main\bin\Debug\EntityFramework.SqlServer.xml
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.frmMain.resources
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.FrmGrammar.resources
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.Properties.Resources.resources
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.csproj.GenerateResource.cache
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.csproj.Up2Date
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.exe
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.pdb
+D:\App\apptienganh\giaodien\Main\obj\Debug\Main.exe.config
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.exe.config
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.frmMain.resources
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.FrmGrammar.resources
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\EnglishLearningApp.frmRegister.resources
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.Properties.Resources.resources
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.csproj.GenerateResource.cache
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.exe
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.pdb
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.frmLogin.resources
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.frmForgotPass.resources
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\Main.exe.config
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\Main.exe
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\Main.pdb
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\EntityFramework.dll
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\EntityFramework.SqlServer.dll
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\EntityFramework.xml
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\bin\Debug\EntityFramework.SqlServer.xml
+D:\App\New folder\apptienganh\giaodien\giaodien\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\Main.exe.config
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\Main.exe
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\Main.pdb
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\EntityFramework.dll
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\EntityFramework.xml
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.frmLogin.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.frmForgotPass.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.frmMain.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.FrmGrammar.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\EnglishLearningApp.frmRegister.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.exe
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Main.pdb
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\Vocabulary.Frmvoca.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\TestDauVao.Bai_Kiem_Tra_Trinh_Do.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\TestDauVao.Lichsunguoidung.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\TestDauVao.Result_Test.resources
+C:\Users\Asus\OneDrive\Video\Documents\Tài liệu học của nguyên\giaodien\giaodien\giaodien\giaodien\Main\obj\Debug\TestDauVao.Test_Form.resources
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\Main.exe.config
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\Main.exe
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\Main.pdb
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\EntityFramework.dll
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\EntityFramework.xml
+C:\Users\Asus\Downloads\giaodien\Main\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\TestDauVao.Bai_Kiem_Tra_Trinh_Do.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.frmLogin.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.frmForgotPass.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.frmMain.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.FrmGrammar.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\EnglishLearningApp.frmRegister.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Vocabulary.Frmvoca.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\TestDauVao.Lichsunguoidung.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\TestDauVao.Result_Test.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\TestDauVao.Test_Form.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.exe
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.pdb
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.frmSetting.resources
+C:\Users\Asus\Downloads\giaodien\Main\obj\Debug\Main.frmChange.resources
