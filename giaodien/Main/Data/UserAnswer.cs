@@ -9,6 +9,8 @@ namespace Main.Data
     [Table("UserAnswer")]
     public partial class UserAnswer
     {
+        internal readonly string UserName;
+
         [Key]
         public int IDUserAnswer { get; set; }
 

@@ -28,7 +28,7 @@ namespace TestDauVao
             {
                 using (var db = new TiengAnhDB())
                 {
-                    var allTests = db.Test.ToList();
+                    var allTests = db.Tests.ToList();
                     foreach (var test in allTests)
                     {
                         Button btnTest = new Button();

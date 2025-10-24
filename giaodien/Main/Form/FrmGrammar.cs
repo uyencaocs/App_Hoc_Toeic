@@ -34,7 +34,7 @@ namespace Main
         private void HienthiLevel()
         {
             TiengAnhDB db = new TiengAnhDB();
-            var levels = db.Level.ToList();
+            var levels = db.Levels.ToList();
             cmblevel.DataSource = levels;
             cmblevel.DisplayMember = "NameLevel";
             cmblevel.ValueMember = "IDLevel";
@@ -43,7 +43,7 @@ namespace Main
         private void HienthiTopic()
         {
             TiengAnhDB db = new TiengAnhDB();
-            var topics = db.Topic.ToList();
+            var topics = db.Topics.ToList();
             cmbTopic.DataSource = topics;
             cmbTopic.DisplayMember = "NameTopic";
             cmbTopic.ValueMember = "IDTopic";
@@ -61,7 +61,7 @@ namespace Main
             int? levelId = cmblevel.SelectedValue as int?;
             int? topicId = cmbTopic.SelectedValue as int?;
 
-            var grammars = db.Grammar.AsQueryable();
+            var grammars = db.Grammars.AsQueryable();
 
             if (levelId.HasValue)
                 grammars = grammars.Where(g => g.IDLevel == levelId.Value);

@@ -12,8 +12,8 @@ namespace Main.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Test()
         {
-            Question = new HashSet<Question>();
-            TestAttempt = new HashSet<TestAttempt>();
+            Questions = new HashSet<Question>();
+            TestAttempts = new HashSet<TestAttempt>();
         }
 
         [Key]
@@ -36,11 +36,11 @@ namespace Main.Data
         public virtual Level Level { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Question> Question { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
 
         public virtual Topic Topic { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TestAttempt> TestAttempt { get; set; }
+        public virtual ICollection<TestAttempt> TestAttempts { get; set; }
     }
 }

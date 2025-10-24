@@ -32,7 +32,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pnlScrollContainer = new System.Windows.Forms.Panel();
             this.flpAllQuestions = new System.Windows.Forms.FlowLayoutPanel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.pnlScrollContainer.SuspendLayout();
             this.SuspendLayout();
@@ -154,8 +153,6 @@
             // 
             // timer2
             // 
-            this.timer2.Interval = 1000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Bai_Kiem_Tra_Trinh_Do
             // 
@@ -185,13 +182,12 @@
         private System.Windows.Forms.Panel pnlScrollContainer;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button bnt_Submit;
         private System.Windows.Forms.FlowLayoutPanel flpQuestionNavigation;
         private System.Windows.Forms.Button bnt_exit;
         private System.Windows.Forms.Label lbl_time;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.FlowLayoutPanel flpAllQuestions;
     }
 }

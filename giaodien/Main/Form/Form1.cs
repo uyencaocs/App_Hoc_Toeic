@@ -40,7 +40,7 @@ namespace Main
             {
                 using (var db = new TiengAnhDB())
                 {
-                    var user = db.User
+                    var user = db.Users
                                 .Where(u => u.UserName == username && u.Password == password)
                                 .FirstOrDefault();
 

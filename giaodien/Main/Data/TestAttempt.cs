@@ -12,7 +12,7 @@ namespace Main.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TestAttempt()
         {
-            UserAnswer = new HashSet<UserAnswer>();
+            UserAnswers = new HashSet<UserAnswer>();
         }
 
         [Key]
@@ -35,6 +35,6 @@ namespace Main.Data
         public virtual User User { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserAnswer> UserAnswer { get; set; }
+        public virtual ICollection<UserAnswer> UserAnswers { get; set; }
     }
 }

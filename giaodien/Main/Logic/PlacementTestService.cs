@@ -79,11 +79,11 @@ namespace TestDauVao.Services
                 using (var dbContext = new TiengAnhDB())
                 {
 
-                    var level = dbContext.Level.FirstOrDefault(l => l.NameLevel == assignedLevelName);
+                    var level = dbContext.Levels.FirstOrDefault(l => l.NameLevel == assignedLevelName);
 
                     if (level == null)
                     {
-                        level = dbContext.Level.Find(1);
+                        level = dbContext.Levels.Find(1);
                         if (level == null)
                         {
                             throw new Exception("Lỗi: Không tìm thấy Level mặc định (ID 1).");
@@ -100,7 +100,7 @@ namespace TestDauVao.Services
                     };
 
 
-                    dbContext.TestAttempt.Add(newTestAttempt);
+                    dbContext.TestAttempts.Add(newTestAttempt);
                     dbContext.SaveChanges();
 
                     return true;
@@ -118,9 +118,9 @@ namespace TestDauVao.Services
         {
             using (var dbContext = new TiengAnhDB())
             {
-                var history = (from attempt in dbContext.TestAttempt
-                               join test in dbContext.Test on attempt.IDTest equals test.IDTest
-                               join level in dbContext.Level on attempt.AssignedLevelID equals level.IDLevel
+                var history = (from attempt in dbContext.TestAttempts
+                               join test in dbContext.Tests on attempt.IDTest equals test.IDTest
+                               join level in dbContext.Levels on attempt.AssignedLevelID equals level.IDLevel
                                where attempt.IDUser == userId
                                orderby attempt.DateTaken descending // Sắp xếp theo ngày làm gần nhất
                                select new TestAttemptHistory
@@ -227,7 +227,7 @@ namespace TestDauVao.Services
                             questions.Add(new Question
                             {
                                 IDQuestion = reader.GetInt32(0),
-                                questiontext = reader.GetString(1),
+                                Questiontext = reader.GetString(1),
                                 // ... ánh xạ các cột còn lại
                                 Answer = reader.GetString(6),
                                 IDTest = reader.GetInt32(7)

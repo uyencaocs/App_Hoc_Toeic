@@ -12,11 +12,11 @@ namespace Main.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Level()
         {
-            Grammar = new HashSet<Grammar>();
-            Test = new HashSet<Test>();
-            TestAttempt = new HashSet<TestAttempt>();
-            User = new HashSet<User>();
-            Vocabulary = new HashSet<Vocabulary>();
+            Grammars = new HashSet<Grammar>();
+            Tests = new HashSet<Test>();
+            TestAttempts = new HashSet<TestAttempt>();
+            Users = new HashSet<User>();
+            Vocabularies = new HashSet<Vocabulary>();
         }
 
         [Key]
@@ -27,18 +27,18 @@ namespace Main.Data
         public string NameLevel { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Grammar> Grammar { get; set; }
+        public virtual ICollection<Grammar> Grammars { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Test> Test { get; set; }
+        public virtual ICollection<Test> Tests { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TestAttempt> TestAttempt { get; set; }
+        public virtual ICollection<TestAttempt> TestAttempts { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> User { get; set; }
+        public virtual ICollection<User> Users { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Vocabulary> Vocabulary { get; set; }
+        public virtual ICollection<Vocabulary> Vocabularies { get; set; }
     }
 }

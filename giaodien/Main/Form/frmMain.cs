@@ -140,7 +140,7 @@ namespace Main
         private void bnt_Lichsunguoidung_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new Lichsunguoidung());
+            OpenChildForm(new frm_Lichsunguoidung());
         }
 
         private void pnlHienthi_Paint(object sender, PaintEventArgs e)

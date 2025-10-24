@@ -70,7 +70,7 @@ namespace Main
                 using (var db = new TiengAnhDB())
                 {
                     // Tìm user bằng email
-                    var user = db.User.FirstOrDefault(u => u.Email == email);
+                    var user = db.Users.FirstOrDefault(u => u.Email == email);
 
                     if (user != null)
                     {

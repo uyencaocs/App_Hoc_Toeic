@@ -37,7 +37,7 @@ namespace EnglishLearningApp
                 using (var db = new TiengAnhDB())
                 {
                     // Kiểm tra username đã tồn tại chưa
-                    if (db.User.Any(u => u.UserName == username))
+                    if (db.Users.Any(u => u.UserName == username))
                     {
                         MessageBox.Show("Tên đăng nhập đã tồn tại! Vui lòng chọn tên khác.", "Lỗi",
                                       MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -47,7 +47,7 @@ namespace EnglishLearningApp
                     }
 
                     // Kiểm tra email đã tồn tại chưa
-                    if (db.User.Any(u => u.Email == email))
+                    if (db.Users.Any(u => u.Email == email))
                     {
                         MessageBox.Show("Email đã được sử dụng! Vui lòng sử dụng email khác.", "Lỗi",
                                       MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -64,7 +64,7 @@ namespace EnglishLearningApp
                         IDLevel = 1,
                     };
 
-                    db.User.Add(newUser);
+                    db.Users.Add(newUser);
                     int result = db.SaveChanges();
 
                     if (result > 0)

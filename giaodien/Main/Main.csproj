@@ -112,11 +112,11 @@
     <Compile Include="Form\Frmvoca.Designer.cs">
       <DependentUpon>Frmvoca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Lichsunguoidung.cs">
+    <Compile Include="Form\frm_Lichsunguoidung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Lichsunguoidung.Designer.cs">
-      <DependentUpon>Lichsunguoidung.cs</DependentUpon>
+    <Compile Include="Form\frm_Lichsunguoidung.Designer.cs">
+      <DependentUpon>frm_Lichsunguoidung.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Result_Test.cs">
       <SubType>Form</SubType>
@@ -173,8 +173,8 @@
     <EmbeddedResource Include="Form\Frmvoca.resx">
       <DependentUpon>Frmvoca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Lichsunguoidung.resx">
-      <DependentUpon>Lichsunguoidung.cs</DependentUpon>
+    <EmbeddedResource Include="Form\frm_Lichsunguoidung.resx">
+      <DependentUpon>frm_Lichsunguoidung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Result_Test.resx">
       <DependentUpon>Result_Test.cs</DependentUpon>

@@ -122,7 +122,7 @@ namespace TestDauVao
 
                     return new QuestionAnswerView
                     {
-                        Question = q.questiontext ?? "(Không có nội dung)",
+                        Question = q.Questiontext ?? "(Không có nội dung)",
 
                         // THÊM CÁC CỘT OPTION VÀO ĐÂY
                         OptionA = q.OptionA,
@@ -273,7 +273,7 @@ namespace TestDauVao
             try
             {
                 var testService = new PlacementTestService();
-                _currentTest = _db.Test.FirstOrDefault(t => t.IDTest == _testId);
+                _currentTest = _db.Tests.FirstOrDefault(t => t.IDTest == _testId);
                 if (_currentTest == null)
                 {
                     MessageBox.Show("Không tìm thấy thông tin bài kiểm tra.", "Lỗi Dữ Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);

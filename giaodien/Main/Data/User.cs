@@ -12,8 +12,8 @@ namespace Main.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
-            Password1 = new HashSet<Password>();
-            TestAttempt = new HashSet<TestAttempt>();
+            Passwords = new HashSet<Password>();
+            TestAttempts = new HashSet<TestAttempt>();
         }
 
         [Key]
@@ -43,9 +43,9 @@ namespace Main.Data
         public virtual Level Level { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Password> Password1 { get; set; }
+        public virtual ICollection<Password> Passwords { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TestAttempt> TestAttempt { get; set; }
+        public virtual ICollection<TestAttempt> TestAttempts { get; set; }
     }
 }

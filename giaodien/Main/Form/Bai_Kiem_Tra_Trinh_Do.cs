@@ -47,11 +47,10 @@ namespace TestDauVao
 
                 lbl_Tieu_de_bai_test.AutoSize = true;
 
-                // Tính toán vị trí X để căn giữa
                 int formWidth = this.ClientSize.Width;
                 int newX = (formWidth - lbl_Tieu_de_bai_test.Width) / 2;
 
-                // ĐIỀU CHỈNH ĐỂ NHÍCH XUỐNG (ví dụ: 20)
+            
                 int newY = 20;
 
                 lbl_Tieu_de_bai_test.Location = new Point(newX, newY);
@@ -96,7 +95,7 @@ namespace TestDauVao
             try
             {
                 var testService = new PlacementTestService();
-                _currentTest = _db.Test.FirstOrDefault(t => t.IDTest == _testId);
+                _currentTest = _db.Tests.FirstOrDefault(t => t.IDTest == _testId);
                 if (_currentTest == null)
                 {
                     MessageBox.Show("Không tìm thấy thông tin bài kiểm tra.", "Lỗi Dữ Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -173,7 +172,7 @@ namespace TestDauVao
                 // 1. Label cho Câu hỏi
                 Label lblQuestionText = new Label
                 {
-                    Text = $"Câu {questionNumber}: {questionData.questiontext}",
+                    Text = $"Câu {questionNumber}: {questionData.Questiontext}",
                     AutoSize = false,
                     Location = new Point(10, 5),
                     Width = questionPanel.Width - 20,
@@ -267,7 +266,6 @@ namespace TestDauVao
             }
             else
             {
-                timer1.Stop();
                 if (!_isTestFinished)
                 {
                     MessageBox.Show("Hết giờ! Bài làm sẽ được tự động nộp.", "Thông báo");

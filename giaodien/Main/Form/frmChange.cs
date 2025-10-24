@@ -67,7 +67,7 @@ namespace Main
                 {
                     // Tìm người dùng hiện tại dựa trên IDUser
                     // db.Users là DbSet<User> trong TiengAnhDB.cs
-                    var user = db.User.Find(_currentUserId);
+                    var user = db.Users.Find(_currentUserId);
 
                     if (user == null)
                     {
