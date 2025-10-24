@@ -20,11 +20,6 @@ namespace TestDauVao
             this.Load += frm_Lichsunguoidung_Load;
         }
 
-      
-        public frm_Lichsunguoidung()
-        {
-            InitializeComponent();
-        }
 
         private void frm_Lichsunguoidung_Load(object sender, EventArgs e)
         {
@@ -137,7 +132,7 @@ namespace TestDauVao
 
     
         private void dgvHistory_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
-        private void panel1_Paint(object sender, PaintEventArgs e) { }
+        private void panel1_Paint(object sender, PaintEventArgs e) { } 
         private void label1_Click(object sender, EventArgs e) { }
         private void chart_history_Click(object sender, EventArgs e) { }
     }
