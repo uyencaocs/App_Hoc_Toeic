@@ -118,19 +118,19 @@ namespace TestDauVao
 
                 var data = allQuestions.Select(q =>
                 {
-                    // Loại bỏ các kiểm tra null quá chi tiết nếu bạn tin tưởng vào dữ liệu đầu vào.
+                 
 
                     return new QuestionAnswerView
                     {
                         Question = q.Questiontext ?? "(Không có nội dung)",
 
-                        // THÊM CÁC CỘT OPTION VÀO ĐÂY
+                      
                         OptionA = q.OptionA,
                         OptionB = q.OptionB,
                         OptionC = q.OptionC,
                         OptionD = q.OptionD,
 
-                        // Cột đáp án chi tiết (dùng phương thức GetAnswerContent đã định nghĩa)
+                       
                         Answer = q.Answer,
                     };
                 }).ToList();
@@ -138,7 +138,7 @@ namespace TestDauVao
                 dgvAnswers.AutoGenerateColumns = true;
                 dgvAnswers.DataSource = data;
 
-                // (Tùy chọn) Đặt lại tiêu đề cột cho rõ ràng hơn
+         
                 if (dgvAnswers.Columns.Contains("Question")) dgvAnswers.Columns["Question"].HeaderText = "Nội dung Câu hỏi";
                 if (dgvAnswers.Columns.Contains("Answer")) dgvAnswers.Columns["Answer"].HeaderText = "Đáp án Đúng";
 
@@ -148,20 +148,7 @@ namespace TestDauVao
                 if (dgvAnswers.Columns.Contains("OptionC")) dgvAnswers.Columns["OptionC"].HeaderText = "Tùy chọn C";
                 if (dgvAnswers.Columns.Contains("OptionD")) dgvAnswers.Columns["OptionD"].HeaderText = "Tùy chọn D";
 
-                /*if (dgvAnswers.Columns.Contains("Question"))
-                {
-                    DataGridViewColumn questionCol = dgvAnswers.Columns["Question"];
-
-                    // Tạo style mới hoặc sử dụng style hiện có
-                    DataGridViewCellStyle style = questionCol.DefaultCellStyle;
-
-                    // Bật xuống dòng
-                    style.WrapMode = DataGridViewTriState.True;
-
-                    // Rất quan trọng: Phải bật AutoSizeRowsMode để hàng tự điều chỉnh chiều cao
-                    dgvAnswers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-
-                }*/
+              
                 dgvAnswers.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                 dgvAnswers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
                 dgvAnswers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -220,35 +207,24 @@ namespace TestDauVao
         }
         public void OpenChildForm(Form childForm)
         {
-            // Đóng form con cũ nếu có
+           
             if (currentFormChild != null)
                 currentFormChild.Close();
 
             currentFormChild = childForm;
 
-            // Cấu hình form con nằm gọn trong panelMain
+        
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill; // ✅ Thay cho WindowState
+            childForm.Dock = DockStyle.Fill;
 
-            // 🔹 chiếm toàn bộ panel
-
-            // Xóa nội dung cũ trong panelMain
             pnlHienthi.Controls.Clear();
             pnlHienthi.Controls.Add(childForm);
             pnlHienthi.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
-        private void pnlHienthi_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void Result_Test_Load_1(object sender, EventArgs e)
         {
@@ -259,11 +235,11 @@ namespace TestDauVao
 
                 lbl_Tieu_de_bai_test.AutoSize = true;
 
-                // Tính toán vị trí X để căn giữa
+          
                 int formWidth = this.ClientSize.Width;
                 int newX = (formWidth - lbl_Tieu_de_bai_test.Width) / 2;
 
-                // ĐIỀU CHỈNH ĐỂ NHÍCH XUỐNG (ví dụ: 20)
+               
                 int newY = 20;
                 lbl_Tieu_de_bai_test.Location = new Point(newX, newY);
             }

@@ -17,7 +17,7 @@ namespace TestDauVao
         private int _testId;
         private Test _currentTest;
         private List<Question> _allQuestions;
-        private const int QuestionPanelHeight = 220; // Tăng chiều cao để chứa câu hỏi và 4 đáp án
+        private const int QuestionPanelHeight = 220; 
         private int _totalSeconds;
         private bool _isTestFinished = false;
         private readonly TiengAnhDB _db = new TiengAnhDB();
@@ -33,8 +33,6 @@ namespace TestDauVao
             _testId = testId;
             this.Load += Bai_Kiem_Tra_Trinh_Do_Load;
             mainForm = main;
-
-
         }
 
 
@@ -59,14 +57,14 @@ namespace TestDauVao
                 {
                     _totalSeconds = _currentTest.DurationInMinutes.Value * 60;
                   
-                    timer2.Start();
+                    timer1.Start();
                 }
                 else
                 {
                     _totalSeconds = 0;
                 }
 
-                // Khởi tạo bản đồ câu trả lời
+            
                 foreach (var q in _allQuestions)
                 {
                     _userAnswersMap.Add(q.IDQuestion, ' ');
@@ -117,7 +115,7 @@ namespace TestDauVao
             }
         }
 
-        // Phương thức mới để xử lý việc chọn đáp án
+        
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             var rb = sender as RadioButton;
@@ -132,10 +130,9 @@ namespace TestDauVao
             }
         }
 
-        // Cập nhật màu nút điều hướng
         private void UpdateNavigationButtonColor(int questionId, bool answered)
         {
-            // IDQuestion là unique, nhưng chúng ta cần tìm nút theo Question Number (index + 1)
+          
             int questionNumber = _allQuestions.FindIndex(q => q.IDQuestion == questionId) + 1;
 
             if (questionNumber > 0)
@@ -159,17 +156,17 @@ namespace TestDauVao
                 var questionData = questions[i];
                 int questionNumber = i + 1;
 
-                // Tạo một Panel để nhóm câu hỏi và các RadioButton
+          
                 Panel questionPanel = new Panel
                 {
                     Width = flpAllQuestions.ClientSize.Width - 10,
                     Height = QuestionPanelHeight,
                     Margin = new Padding(5, 5, 5, 15),
                     BorderStyle = BorderStyle.FixedSingle,
-                    Tag = questionData.IDQuestion // Lưu IDQuestion vào Tag của Panel
+                    Tag = questionData.IDQuestion,
                 };
 
-                // 1. Label cho Câu hỏi
+             
                 Label lblQuestionText = new Label
                 {
                     Text = $"Câu {questionNumber}: {questionData.Questiontext}",
@@ -184,7 +181,7 @@ namespace TestDauVao
                 int yPos = 50;
                 int spacing = 35;
 
-                // 2. Tạo RadioButtons cho các tùy chọn
+             
                 RadioButton[] radioButtons = new RadioButton[4];
                 string[] options = { questionData.OptionA, questionData.OptionB, questionData.OptionC, questionData.OptionD };
                 char[] tags = { 'A', 'B', 'C', 'D' };
@@ -204,7 +201,7 @@ namespace TestDauVao
                     radioButtons[j] = rb;
                 }
 
-                // Khôi phục đáp án đã chọn (nếu có)
+          
                 if (_userAnswersMap.ContainsKey(questionData.IDQuestion) && _userAnswersMap[questionData.IDQuestion] != ' ')
                 {
                     char selectedAnswer = _userAnswersMap[questionData.IDQuestion];
@@ -218,7 +215,6 @@ namespace TestDauVao
                 flpAllQuestions.Controls.Add(questionPanel);
             }
 
-            // Điều chỉnh chiều cao của flpAllQuestions
             int requiredHeight = (questions.Count * QuestionPanelHeight) + (questions.Count * 15) + 50;
             flpAllQuestions.Height = requiredHeight;
         }
@@ -234,7 +230,7 @@ namespace TestDauVao
                     Tag = i,
                     Size = new Size(30, 30),
                     Margin = new Padding(3),
-                    // Kiểm tra trạng thái đã trả lời để đặt màu ban đầu
+               
                     BackColor = Color.LightGray
                 };
                 btn.Click += BtnQuestion_Click;
@@ -252,12 +248,11 @@ namespace TestDauVao
 
         private void ScrollToQuestion(int questionNumber)
         {
-            // questionNumber là số thứ tự (từ 1), cần nhân với kích thước panel câu hỏi và lề dưới
             int targetY = (questionNumber - 1) * (QuestionPanelHeight + 15);
             pnlScrollContainer.AutoScrollPosition = new Point(0, targetY);
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             if (_totalSeconds > 0)
             {
@@ -266,6 +261,7 @@ namespace TestDauVao
             }
             else
             {
+                timer1.Stop();
                 if (!_isTestFinished)
                 {
                     MessageBox.Show("Hết giờ! Bài làm sẽ được tự động nộp.", "Thông báo");
@@ -278,16 +274,15 @@ namespace TestDauVao
         {
             if (_isTestFinished) return;
             _isTestFinished = true;
-            timer2.Stop();
+            timer1.Stop();
 
-            // Lấy danh sách câu trả lời từ Dictionary đã lưu
+        
             var userAnswers = _userAnswersMap.Select(kvp => new UserQuestionAnswer
             {
                 IDQuestion = kvp.Key,
                 ChosenAnswer = kvp.Value
             }).ToList();
 
-            // 2. Chấm điểm
             int correctCount = 0;
 
             foreach (var userAnswer in userAnswers)
@@ -295,7 +290,7 @@ namespace TestDauVao
                 var correctQuestion = _allQuestions.FirstOrDefault(q => q.IDQuestion == userAnswer.IDQuestion);
 
                 if (correctQuestion != null &&
-                    userAnswer.ChosenAnswer != ' ' && // Đảm bảo người dùng có chọn đáp án
+                    userAnswer.ChosenAnswer != ' ' &&
                     userAnswer.ChosenAnswer.ToString().Equals(correctQuestion.Answer, StringComparison.OrdinalIgnoreCase))
                 {
                     correctCount++;
@@ -306,12 +301,10 @@ namespace TestDauVao
             int wrongCount = totalQuestions - correctCount;
             double score = (totalQuestions > 0) ? ((double)correctCount / totalQuestions) * 100 : 0;
 
-            // Tính thời gian làm bài
             int testDuration = _currentTest.DurationInMinutes.HasValue ? _currentTest.DurationInMinutes.Value * 60 : 0;
             int timeSpent = testDuration - _totalSeconds;
             if (timeSpent < 0) timeSpent = 0;
 
-            // Phân cấp trình độ
             string assignedLevel = (score >= 70) ? "B2" : "A2";
 
             var service = new PlacementTestService();
@@ -346,11 +339,11 @@ namespace TestDauVao
             }
         }
 
-        // Giữ lại các methods rỗng nếu chúng được sử dụng trong designer hoặc bạn cần
+   
      
         private void flpQuestionNavigation_Paint(object sender, PaintEventArgs e) { }
         private void bnt_exit_Click(object sender, EventArgs e) {
-            timer2.Stop();
+            timer1.Stop();
             DialogResult resutl = MessageBox.Show("Bạn muốn thoát? Bài làm sẽ không được lưu.", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if(resutl == DialogResult.Yes)
             {
@@ -361,7 +354,7 @@ namespace TestDauVao
             {
                 if (!_isTestFinished)
                 {
-                    timer2.Start();
+                    timer1.Start();
                 }
             }
         }

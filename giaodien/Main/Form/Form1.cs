@@ -1,6 +1,7 @@
 ﻿using EnglishLearningApp;
 using Main;
 using Main.Data;
+using Main.Logic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,7 +32,7 @@ namespace Main
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu!", "Cảnh báo",
-                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUsers.Focus();
                 return;
             }
@@ -40,13 +41,16 @@ namespace Main
             {
                 using (var db = new TiengAnhDB())
                 {
+                  
                     var user = db.Users
-                                .Where(u => u.UserName == username && u.Password == password)
-                                .FirstOrDefault();
+                                 .Where(u => u.UserName == username && u.Password == password)
+                                 .FirstOrDefault();
 
                     if (user != null)
                     {
-                        // Xử lý ghi nhớ đăng nhập
+                        
+                        SessionManager.LoggedInUserId = user.IDUser;
+
                         HandleRememberLogin(username, password);
 
                         MessageBox.Show($"Đăng nhập thành công! Chào mừng {username}.",
@@ -59,7 +63,7 @@ namespace Main
                     else
                     {
                         MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Lỗi",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                         txtPass.Text = "";
                         txtPass.Focus();
                     }
@@ -68,7 +72,7 @@ namespace Main
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi kết nối database: {ex.Message}", "Lỗi",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void HandleRememberLogin(string username, string password)
@@ -81,7 +85,7 @@ namespace Main
             }
             else
             {
-                // Xóa thông tin đã lưu nếu không tick
+              
                 Properties.Settings.Default.Username = "";
                 Properties.Settings.Default.Password = "";
                 Properties.Settings.Default.Save();
@@ -111,7 +115,7 @@ namespace Main
         {
             if (!chkSave.Checked)
             {
-                // Xóa thông tin đã lưu khi bỏ tick
+               
                 Properties.Settings.Default.Username = "";
                 Properties.Settings.Default.Password = "";
                 Properties.Settings.Default.Save();
@@ -120,7 +124,7 @@ namespace Main
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            // Load thông tin đăng nhập đã lưu
+            
             if (!string.IsNullOrEmpty(Properties.Settings.Default.Username))
             {
                 txtUsers.Text = Properties.Settings.Default.Username;
@@ -128,7 +132,6 @@ namespace Main
                 chkSave.Checked = true;
             }
 
-            // Focus vào ô nhập liệu
             if (string.IsNullOrEmpty(txtUsers.Text))
                 txtUsers.Focus();
             else

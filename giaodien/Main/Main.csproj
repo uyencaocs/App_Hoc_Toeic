@@ -143,6 +143,7 @@
       <DependentUpon>frmChange.cs</DependentUpon>
     </Compile>
     <Compile Include="Logic\PlacementTestService.cs" />
+    <Compile Include="Logic\SessionManager.cs" />
     <Compile Include="Logic\TestAttemptHistory.cs" />
     <Compile Include="Logic\Toiec_Table.cs" />
     <Compile Include="Program.cs" />

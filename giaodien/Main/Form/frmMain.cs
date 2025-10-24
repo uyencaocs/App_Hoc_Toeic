@@ -10,17 +10,19 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using Vocabulary;
 using TestDauVao;
+using Main.Data;
+using System.Configuration;
 
 namespace Main
 {
     public partial class frmMain : Form
     {
         private Form currentFormChild;
+        public int IDUser;
         public frmMain()
         {
             InitializeComponent();
-        
-
+            IDUser = Logic.SessionManager.LoggedInUserId;
             // 📘 Icon cho từng nút (emoji)
             btnGrammar.Text = "📘  Grammar";
             btnVocabulary.Text = "📖  Vocabulary";
@@ -58,7 +60,6 @@ namespace Main
         }
             
         private Button currentButton;
-
         private void ActivateButton(object sender)
         {
             if (currentButton != null)
@@ -140,7 +141,15 @@ namespace Main
         private void bnt_Lichsunguoidung_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new frm_Lichsunguoidung());
+
+            if (IDUser > 0)
+            {
+                OpenChildForm(new frm_Lichsunguoidung(IDUser));
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng đăng nhập để xem lịch sử.", "Lỗi Truy Cập", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void pnlHienthi_Paint(object sender, PaintEventArgs e)

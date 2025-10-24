@@ -157,7 +157,7 @@ namespace TestDauVao
             this.pnlHienthi.Name = "pnlHienthi";
             this.pnlHienthi.Size = new System.Drawing.Size(721, 708);
             this.pnlHienthi.TabIndex = 2;
-            this.pnlHienthi.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHienthi_Paint);
+        
             // 
             // dgvAnswers
             // 
@@ -169,7 +169,7 @@ namespace TestDauVao
             this.dgvAnswers.RowTemplate.Height = 24;
             this.dgvAnswers.Size = new System.Drawing.Size(706, 649);
             this.dgvAnswers.TabIndex = 1;
-            this.dgvAnswers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+        
             // 
             // lblKetLuan
             // 
