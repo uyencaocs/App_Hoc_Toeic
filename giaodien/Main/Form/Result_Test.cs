@@ -10,13 +10,14 @@ namespace TestDauVao
 {
     public partial class Result_Test : Form
     {
-
+      
         public string TestTitle { get; set; }
         public int TimeTakenSeconds { get; set; }
         public int CorrectAnswers { get; set; }
         public int WrongAnswers { get; set; }
         public double FinalScore { get; set; }
         public string AssignedLevel { get; set; }
+ 
         public class QuestionAnswerView
         {
             public string Question { get; set; }
@@ -28,7 +29,8 @@ namespace TestDauVao
         }
 
         private Form currentFormChild;
-        private int _testId;
+        private readonly int _testId;
+        private readonly int _currentUserId; 
         private Test _currentTest;
         private List<Question> _allQuestions;
         private readonly TiengAnhDB _db = new TiengAnhDB();
@@ -38,65 +40,52 @@ namespace TestDauVao
             InitializeComponent();
             this.Load += Result_Test_Load;
             _testId = testid;
+
+            
+            _currentUserId = Main.Logic.SessionManager.LoggedInUserId;
         }
 
         private void Result_Test_Load(object sender, EventArgs e)
         {
-
             TimeSpan time = TimeSpan.FromSeconds(TimeTakenSeconds);
 
+       
+            lblsocaudung.Text = $"{FinalScore:F1} / 100"; 
+            lblDochinhxac.Text = CorrectAnswers.ToString(); // Số câu đúng
+            lbl_socausai.Text = WrongAnswers.ToString(); // Số câu sai
+            lblthoigianlambai.Text = time.ToString(@"mm\:ss"); // Thời gian làm bài
 
-            //lblTenDeThi.Text = TestTitle;
+           
+            SaveTestResultToDatabase();
+        }
 
-            lblsocaudung.Text = $"{FinalScore:F1} / 100";
-            lblDochinhxac.Text = CorrectAnswers.ToString();
-            lbl_socausai.Text = WrongAnswers.ToString();
-            //lblKetLuan.Text = AssignedLevel;
-            lblthoigianlambai.Text = time.ToString(@"mm\:ss");
-
-
-            /*switch (AssignedLevel)
+        private void SaveTestResultToDatabase()
+        {
+            if (_currentUserId <= 0)
             {
-                case "C1":
-                case "B2":
-                    lblKetLuan.Text = $"Xuất sắc! Bạn đã đạt trình độ {AssignedLevel}.";
-                    lblKetLuan.ForeColor = Color.ForestGreen;
-                    break;
-                case "B1":
-                    lblKetLuan.Text = $"Rất tốt! Bạn đã đạt trình độ {AssignedLevel}. Hãy tiếp tục phát huy!";
-                    lblKetLuan.ForeColor = Color.DodgerBlue;
-                    break;
-                case "A2":
-                    lblKetLuan.Text = $"Bạn đã đạt trình độ {AssignedLevel}. Hãy cố gắng hơn nữa nhé!";
-                    lblKetLuan.ForeColor = Color.Orange;
-                    break;
-                default:
-                    lblKetLuan.Text = "Cần cố gắng nhiều hơn! Hãy bắt đầu với lộ trình A1.";
-                    lblKetLuan.ForeColor = Color.Red;
-                    break;
-            }*/
+            
+                MessageBox.Show("Cảnh báo: ID người dùng không hợp lệ. Kết quả không được lưu vào lịch sử.", "Lỗi Lưu Trữ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var service = new PlacementTestService();
+
+         
+            bool success = service.SaveTestResult(
+                _currentUserId,
+                _testId,
+                FinalScore,
+                TimeTakenSeconds,
+                AssignedLevel
+            );
+
+            if (!success)
+            {
+                // Thông báo nếu việc lưu thất bại
+                MessageBox.Show("Cảnh báo: Lịch sử bài làm không được lưu vào cơ sở dữ liệu.", "Lỗi CSDL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void btnQuayLaiTrangChu_Click(object sender, EventArgs e)
-        {
-
-            this.Close();
-        }
-
-        private void btnXemChiTiet_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng xem đáp án chi tiết sẽ được phát triển trong tương lai.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void bnt_quaylaitrangchu_Click(object sender, EventArgs e)
         {
@@ -116,81 +105,43 @@ namespace TestDauVao
                     throw new Exception("Danh sách câu hỏi rỗng hoặc lỗi tải dữ liệu.");
                 }
 
+                // Chuyển đổi List<Question> sang List<QuestionAnswerView> để hiển thị
                 var data = allQuestions.Select(q =>
                 {
-                 
-
                     return new QuestionAnswerView
                     {
                         Question = q.Questiontext ?? "(Không có nội dung)",
-
-                      
                         OptionA = q.OptionA,
                         OptionB = q.OptionB,
                         OptionC = q.OptionC,
                         OptionD = q.OptionD,
-
-                       
                         Answer = q.Answer,
                     };
                 }).ToList();
 
-                dgvAnswers.AutoGenerateColumns = true;
+               
                 dgvAnswers.DataSource = data;
 
-         
+                // Đặt tên cột
                 if (dgvAnswers.Columns.Contains("Question")) dgvAnswers.Columns["Question"].HeaderText = "Nội dung Câu hỏi";
                 if (dgvAnswers.Columns.Contains("Answer")) dgvAnswers.Columns["Answer"].HeaderText = "Đáp án Đúng";
 
-                // Đặt tên cột Options
                 if (dgvAnswers.Columns.Contains("OptionA")) dgvAnswers.Columns["OptionA"].HeaderText = "Tùy chọn A";
                 if (dgvAnswers.Columns.Contains("OptionB")) dgvAnswers.Columns["OptionB"].HeaderText = "Tùy chọn B";
                 if (dgvAnswers.Columns.Contains("OptionC")) dgvAnswers.Columns["OptionC"].HeaderText = "Tùy chọn C";
                 if (dgvAnswers.Columns.Contains("OptionD")) dgvAnswers.Columns["OptionD"].HeaderText = "Tùy chọn D";
 
-              
                 dgvAnswers.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                 dgvAnswers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-                dgvAnswers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+           
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi hiển thị đáp án: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            /*try
-            {
-                var service = new PlacementTestService();
-                var allQuestions = service.GetRandomQuestionsForTest(_testId);
-
-                if (allQuestions == null)
-                    throw new Exception("allQuestions == null");
-
-                if (allQuestions.Count == 0)
-                    throw new Exception("Danh sách câu hỏi rỗng.");
-
-                var data = allQuestions.Select(q =>
-                {
-                    if (q == null) throw new Exception("Một phần tử q trong allQuestions bị null");
-                    if (q.Answer == null) throw new Exception("Thuộc tính Answer bị null");
-                    if (q.OptionA == null && q.OptionB == null && q.OptionC == null && q.OptionD == null)
-                        throw new Exception("Các tùy chọn OptionA-D bị null");
-
-                    return new QuestionAnswerView
-                    {
-                        Question = q.questiontext ?? "(Không có nội dung)",
-                        Answer = GetAnswerContent(q)
-                    };
-                }).ToList();
-
-                dgvAnswers.AutoGenerateColumns = true;
-                dgvAnswers.DataSource = data;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi hiển thị đáp án: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
-
         }
+
+        
         private string GetAnswerContent(Question q)
         {
             if (q == null || string.IsNullOrEmpty(q.Answer))
@@ -205,70 +156,7 @@ namespace TestDauVao
                 default: return "(Không xác định)";
             }
         }
-        public void OpenChildForm(Form childForm)
-        {
-           
-            if (currentFormChild != null)
-                currentFormChild.Close();
 
-            currentFormChild = childForm;
-
-        
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            pnlHienthi.Controls.Clear();
-            pnlHienthi.Controls.Add(childForm);
-            pnlHienthi.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-
-        private void Result_Test_Load_1(object sender, EventArgs e)
-        {
-            if (LoadTestData())
-            {
-                lbl_Tieu_de_bai_test.Text = _currentTest.Title;
-                lbl_Tieu_de_bai_test.Font = new Font(lbl_Tieu_de_bai_test.Font.FontFamily, 14, FontStyle.Bold);
-
-                lbl_Tieu_de_bai_test.AutoSize = true;
-
-          
-                int formWidth = this.ClientSize.Width;
-                int newX = (formWidth - lbl_Tieu_de_bai_test.Width) / 2;
-
-               
-                int newY = 20;
-                lbl_Tieu_de_bai_test.Location = new Point(newX, newY);
-            }
-        }
-        private bool LoadTestData()
-        {
-            try
-            {
-                var testService = new PlacementTestService();
-                _currentTest = _db.Tests.FirstOrDefault(t => t.IDTest == _testId);
-                if (_currentTest == null)
-                {
-                    MessageBox.Show("Không tìm thấy thông tin bài kiểm tra.", "Lỗi Dữ Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-                }
-                _allQuestions = testService.GetRandomQuestionsForTest(_testId);
-
-                if (_allQuestions == null || _allQuestions.Count == 0)
-                {
-                    return false;
-                }
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi kết nối hoặc truy vấn cơ sở dữ liệu: " + ex.Message);
-                return false;
-            }
-        }
+      
     }
 }
