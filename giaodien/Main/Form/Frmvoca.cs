@@ -10,7 +10,7 @@ namespace Vocabulary
     public partial class Frmvoca : Form
     {
         // --- CHỈNH ở đây: connection string đến SQL Server của bạn ---
-        private string connectionString = @"Data Source=NGUYENCUTEE\SQLEXPRESS01;Initial Catalog=TiengAnhDB;Integrated Security=True;";
+        private string connectionString = @"Data Source=DESKTOP-IIQVP6N;Initial Catalog=TiengAnhDB;Integrated Security=True;";
 
         private List<VocabItem> currentList = new List<VocabItem>();
         private int currentIndex = -1;
@@ -121,9 +121,9 @@ namespace Vocabulary
             string sql = @"
                         SELECT v.IDVocabulary, v.Word, v.Meaning, v.Example
                         FROM Vocabulary v
-                        WHERE 1=1
+                        
                         ";
-            if (topicId.HasValue) sql += " AND v.IDTopic = @topicId";
+            if (topicId.HasValue) sql += " where v.IDTopic = @topicId";
             if (levelId.HasValue) sql += " AND v.IDLevel = @levelId";
 
             sql += " ORDER BY v.IDVocabulary;"; // order by ID (or Word) for stable sequence

@@ -8,7 +8,7 @@ namespace Main.Data
     public partial class TiengAnhDB : DbContext
     {
         public TiengAnhDB()
-            : base("name=TiengAnhDB3")
+            : base("name=TiengAnhDB4")
         {
         }
 

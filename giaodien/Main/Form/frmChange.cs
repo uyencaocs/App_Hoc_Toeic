@@ -31,10 +31,6 @@ namespace Main
             string oldPass = txtOld.Text.Trim();
             string newPass = txtNewPass.Text.Trim();
             string newPassConfirm = txtConfirm.Text.Trim();
-
-            // GIẢ ĐỊNH: Biến này chứa IDUser của người dùng đang đăng nhập
-            // Ví dụ: Lấy từ một biến tĩnh hoặc sau khi đăng nhập thành công
-            // Vui lòng thay thế 1 bằng giá trị IDUser thực tế của người dùng hiện tại.
             int _currentUserId = 1;
 
             // 2. Kiểm tra dữ liệu đầu vào
@@ -62,11 +58,11 @@ namespace Main
             // 3. Xử lý đổi mật khẩu
             try
             {
-                // Sử dụng TiengAnhDB làm DbContext
+               
                 using (var db = new TiengAnhDB())
                 {
                     // Tìm người dùng hiện tại dựa trên IDUser
-                    // db.Users là DbSet<User> trong TiengAnhDB.cs
+                   
                     var user = db.Users.Find(_currentUserId);
 
                     if (user == null)
@@ -83,12 +79,12 @@ namespace Main
                         return;
                     }
 
-                    // Cập nhật MẬT KHẨU MỚI vào trường Password
-                    user.Password = newPass; // <--- VÌ BẠN ĐANG LƯU PLAINTEXT, LÀM NHƯ THẾ NÀY
+                    
+                    user.Password = newPass;
 
                     db.SaveChanges();
 
-                    // Thông báo thành công và xóa nội dung TextBox
+                   
                     MessageBox.Show("Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     txtOld.Clear();

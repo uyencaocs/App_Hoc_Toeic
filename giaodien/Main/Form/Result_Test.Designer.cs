@@ -74,8 +74,7 @@ namespace TestDauVao
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 441);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
+      
             // lbl_socausai
             // 
             this.lbl_socausai.AutoSize = true;
@@ -224,7 +223,6 @@ namespace TestDauVao
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Result_Test";
             this.Text = "Result_Test";
-            this.Load += new System.EventHandler(this.Result_Test_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnlHienthi.ResumeLayout(false);

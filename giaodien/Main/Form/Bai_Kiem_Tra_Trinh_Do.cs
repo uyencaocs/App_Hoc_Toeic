@@ -2,12 +2,10 @@
 using Main.Data;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using TestDauVao.Services;
-
 
 namespace TestDauVao
 {
@@ -17,24 +15,26 @@ namespace TestDauVao
         private int _testId;
         private Test _currentTest;
         private List<Question> _allQuestions;
-        private const int QuestionPanelHeight = 220; 
+        private const int QuestionPanelHeight = 220;
         private int _totalSeconds;
         private bool _isTestFinished = false;
         private readonly TiengAnhDB _db = new TiengAnhDB();
         private frmMain mainForm;
 
-
         private Dictionary<int, char> _userAnswersMap = new Dictionary<int, char>();
+
 
         public Bai_Kiem_Tra_Trinh_Do(int testId, frmMain main)
         {
             InitializeComponent();
-       
+
             _testId = testId;
             this.Load += Bai_Kiem_Tra_Trinh_Do_Load;
             mainForm = main;
         }
 
+       
+       
 
         private void Bai_Kiem_Tra_Trinh_Do_Load(object sender, EventArgs e)
         {
@@ -47,8 +47,6 @@ namespace TestDauVao
 
                 int formWidth = this.ClientSize.Width;
                 int newX = (formWidth - lbl_Tieu_de_bai_test.Width) / 2;
-
-            
                 int newY = 20;
 
                 lbl_Tieu_de_bai_test.Location = new Point(newX, newY);
@@ -56,7 +54,6 @@ namespace TestDauVao
                 if (_currentTest.DurationInMinutes.HasValue)
                 {
                     _totalSeconds = _currentTest.DurationInMinutes.Value * 60;
-                  
                     timer1.Start();
                 }
                 else
@@ -64,7 +61,7 @@ namespace TestDauVao
                     _totalSeconds = 0;
                 }
 
-            
+
                 foreach (var q in _allQuestions)
                 {
                     _userAnswersMap.Add(q.IDQuestion, ' ');
@@ -73,7 +70,7 @@ namespace TestDauVao
                 LoadQuestionControls(_allQuestions);
                 CreateNavigationButtons(_allQuestions.Count);
 
-                
+
                 lbl_time.Text = TimeSpan.FromSeconds(_totalSeconds).ToString(@"mm\:ss");
 
             }
@@ -115,7 +112,7 @@ namespace TestDauVao
             }
         }
 
-        
+
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             var rb = sender as RadioButton;
@@ -132,13 +129,13 @@ namespace TestDauVao
 
         private void UpdateNavigationButtonColor(int questionId, bool answered)
         {
-          
+
             int questionNumber = _allQuestions.FindIndex(q => q.IDQuestion == questionId) + 1;
 
             if (questionNumber > 0)
             {
                 var button = flpQuestionNavigation.Controls.OfType<Button>()
-                             .FirstOrDefault(b => (int)b.Tag == questionNumber);
+                                 .FirstOrDefault(b => (int)b.Tag == questionNumber);
 
                 if (button != null)
                 {
@@ -156,7 +153,7 @@ namespace TestDauVao
                 var questionData = questions[i];
                 int questionNumber = i + 1;
 
-          
+
                 Panel questionPanel = new Panel
                 {
                     Width = flpAllQuestions.ClientSize.Width - 10,
@@ -166,7 +163,7 @@ namespace TestDauVao
                     Tag = questionData.IDQuestion,
                 };
 
-             
+
                 Label lblQuestionText = new Label
                 {
                     Text = $"Câu {questionNumber}: {questionData.Questiontext}",
@@ -181,7 +178,7 @@ namespace TestDauVao
                 int yPos = 50;
                 int spacing = 35;
 
-             
+
                 RadioButton[] radioButtons = new RadioButton[4];
                 string[] options = { questionData.OptionA, questionData.OptionB, questionData.OptionC, questionData.OptionD };
                 char[] tags = { 'A', 'B', 'C', 'D' };
@@ -201,7 +198,7 @@ namespace TestDauVao
                     radioButtons[j] = rb;
                 }
 
-          
+
                 if (_userAnswersMap.ContainsKey(questionData.IDQuestion) && _userAnswersMap[questionData.IDQuestion] != ' ')
                 {
                     char selectedAnswer = _userAnswersMap[questionData.IDQuestion];
@@ -230,7 +227,7 @@ namespace TestDauVao
                     Tag = i,
                     Size = new Size(30, 30),
                     Margin = new Padding(3),
-               
+
                     BackColor = Color.LightGray
                 };
                 btn.Click += BtnQuestion_Click;
@@ -252,6 +249,7 @@ namespace TestDauVao
             pnlScrollContainer.AutoScrollPosition = new Point(0, targetY);
         }
 
+  
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (_totalSeconds > 0)
@@ -270,13 +268,14 @@ namespace TestDauVao
             }
         }
 
+      
         private void SubmitTest()
         {
             if (_isTestFinished) return;
             _isTestFinished = true;
             timer1.Stop();
 
-        
+
             var userAnswers = _userAnswersMap.Select(kvp => new UserQuestionAnswer
             {
                 IDQuestion = kvp.Key,
@@ -291,6 +290,7 @@ namespace TestDauVao
 
                 if (correctQuestion != null &&
                     userAnswer.ChosenAnswer != ' ' &&
+                    correctQuestion.Answer != null && // Thêm kiểm tra null
                     userAnswer.ChosenAnswer.ToString().Equals(correctQuestion.Answer, StringComparison.OrdinalIgnoreCase))
                 {
                     correctCount++;
@@ -303,12 +303,14 @@ namespace TestDauVao
 
             int testDuration = _currentTest.DurationInMinutes.HasValue ? _currentTest.DurationInMinutes.Value * 60 : 0;
             int timeSpent = testDuration - _totalSeconds;
+        
+            if (timeSpent < 0 || (testDuration > 0 && _totalSeconds == 0)) timeSpent = testDuration;
             if (timeSpent < 0) timeSpent = 0;
 
             string assignedLevel = (score >= 70) ? "B2" : "A2";
 
             var service = new PlacementTestService();
-          
+
 
             Result_Test resultForm = new Result_Test(_testId)
             {
@@ -321,8 +323,11 @@ namespace TestDauVao
             };
 
             mainForm.OpenChildForm(resultForm);
+
+            this.Close();
         }
 
+        // PHẦN XỬ LÝ SỰ KIỆN NÚT (Giữ nguyên)
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn chắc chắn muốn nộp bài?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -339,16 +344,16 @@ namespace TestDauVao
             }
         }
 
-   
-     
         private void flpQuestionNavigation_Paint(object sender, PaintEventArgs e) { }
-        private void bnt_exit_Click(object sender, EventArgs e) {
+
+        private void bnt_exit_Click(object sender, EventArgs e)
+        {
             timer1.Stop();
             DialogResult resutl = MessageBox.Show("Bạn muốn thoát? Bài làm sẽ không được lưu.", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if(resutl == DialogResult.Yes)
+            if (resutl == DialogResult.Yes)
             {
                 mainForm.OpenChildForm(new Test_Form(mainForm));
-
+                this.Close(); // Đóng form hiện tại sau khi chuyển form
             }
             else
             {
@@ -358,19 +363,21 @@ namespace TestDauVao
                 }
             }
         }
-        private void bnt_Submit_Click(object sender, EventArgs e) {
+
+        private void bnt_Submit_Click(object sender, EventArgs e)
+        {
             DialogResult resutl = MessageBox.Show("Bạn chắc chắn muốn nộp bài?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(resutl == DialogResult.Yes)
+            if (resutl == DialogResult.Yes)
             {
                 SubmitTest();
             }
         }
+
         private void pnlScrollContainer_Paint(object sender, PaintEventArgs e) { }
         private void flpAllQuestions_Paint(object sender, PaintEventArgs e) { }
 
-        private void Bai_Kiem_Tra_Trinh_Do_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        
+        private void Bai_Kiem_Tra_Trinh_Do_Load_1(object sender, EventArgs e) { }
+        private void timer1_Tick_1(object sender, EventArgs e) { }
     }
 }

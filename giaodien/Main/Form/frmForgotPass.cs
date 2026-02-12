@@ -26,10 +26,11 @@ namespace Main
                 MessageBox.Show("Vui lòng nhập email đã đăng ký!",
                     "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtForgot.Focus();
+                this.Hide();
                 return;
             }
 
-            // Validate email format
+         
             if (!IsValidEmail(email))
             {
                 MessageBox.Show("Email không hợp lệ! Vui lòng nhập email đúng định dạng.",
@@ -45,7 +46,9 @@ namespace Main
 
                 if (success)
                 {
-                    this.Close();
+                    this.Hide();
+                    var loginForm = new frmLogin();
+                    loginForm.ShowDialog();
                 }
                 else
                 {
@@ -62,19 +65,19 @@ namespace Main
             }
         }
 
-        // PHƯƠNG THỨC HIỂN THỊ MẬT KHẨU HIỆN TẠI
-        private bool ShowCurrentPassword(string email)
+
+        private bool ShowCurrentPassword(string email)//hien mk hIEN TAI
         {
             try
             {
                 using (var db = new TiengAnhDB())
                 {
-                    // Tìm user bằng email
+                    // Tìm 
                     var user = db.Users.FirstOrDefault(u => u.Email == email);
 
                     if (user != null)
                     {
-                        // Hiển thị mật khẩu hiện tại trong MessageBox
+                        // Hiển thị
                         MessageBox.Show($"Thông tin tài khoản:\n\n" +
                                       $"Email: {user.Email}\n" +
                                       $"Tên đăng nhập: {user.UserName}\n" +

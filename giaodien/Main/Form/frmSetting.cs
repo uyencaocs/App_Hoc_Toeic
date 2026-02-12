@@ -26,11 +26,7 @@ namespace Main
 
             if (rs == DialogResult.Yes)
             {
-                frmMain frmMain = new frmMain();
-                frmMain.Hide();
-                
-                frmLogin login = new frmLogin();
-                login.Show();
+                Application.Restart();
             }
         }
 
